@@ -1,1 +1,0 @@
-https://www.kaggle.com/datasets/pranavkarnani/fooddata-central?utm_source=chatgpt.com&select=fda_approved_food_items_w_nutrient_info.csv
