@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "type": "module",
   "workspaces": [
-    "Smart_Fit_frontend"
+    "Smart_Fit_frontend",
+    "smartfit-backend"
   ],
   "scripts": {
     "dev": "node server.js",

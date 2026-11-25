@@ -7,8 +7,9 @@ import { EXERCISES_DATASET, FOOD_DATASET } from './fitnessData.js';
 const JWT_SECRET_KEY = process.env.JWT_SECRET_KEY || 'smartfit-dev-secret-key';
 const JWT_ALGORITHM = process.env.JWT_ALGORITHM || 'HS256';
 const ACCESS_TOKEN_EXPIRE_MINUTES = Number(process.env.ACCESS_TOKEN_EXPIRE_MINUTES) || 60 * 24;
+const USER_COOKIE_NAME = 'smartfit_auth_store';
 
-// In-memory user store (ephemeral across cold starts / restarts)
+// In-memory cache (complemented by signed HttpOnly cookie for stateless serverless functions)
 const usersByEmail = new Map();
 let nextUserId = 1;
 
@@ -16,7 +17,49 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// --- Auth Helpers ---
+// --- Cookie & Auth Helpers ---
+function parseCookies(cookieHeader = '') {
+  const cookies = {};
+  for (const part of cookieHeader.split(';')) {
+    const idx = part.indexOf('=');
+    if (idx === -1) continue;
+    const key = part.slice(0, idx).trim();
+    const val = part.slice(idx + 1).trim();
+    if (key) cookies[key] = decodeURIComponent(val);
+  }
+  return cookies;
+}
+
+function readCookieUsers(req) {
+  try {
+    const cookies = parseCookies(req.headers.cookie || '');
+    const raw = cookies[USER_COOKIE_NAME];
+    if (!raw) return [];
+    const payload = jwt.verify(raw, JWT_SECRET_KEY, { algorithms: [JWT_ALGORITHM] });
+    return Array.isArray(payload?.users) ? payload.users : [];
+  } catch {
+    return [];
+  }
+}
+
+function writeCookieUsers(res, users) {
+  const trimmed = users.slice(-5);
+  const token = jwt.sign({ users: trimmed }, JWT_SECRET_KEY, {
+    algorithm: JWT_ALGORITHM,
+    expiresIn: '30d',
+  });
+  const isProd = process.env.NODE_ENV === 'production' || process.env.VERCEL === '1';
+  const flags = [
+    `${USER_COOKIE_NAME}=${encodeURIComponent(token)}`,
+    'Path=/',
+    'HttpOnly',
+    'SameSite=Lax',
+    `Max-Age=${60 * 60 * 24 * 30}`,
+  ];
+  if (isProd) flags.push('Secure');
+  res.setHeader('Set-Cookie', flags.join('; '));
+}
+
 function createAccessToken(email) {
   return jwt.sign({ sub: email }, JWT_SECRET_KEY, {
     algorithm: JWT_ALGORITHM,
@@ -58,7 +101,8 @@ app.post('/api/v1/auth/register', async (req, res) => {
   }
 
   const normalizedEmail = email.trim().toLowerCase();
-  if (usersByEmail.has(normalizedEmail)) {
+  const cookieUsers = readCookieUsers(req);
+  if (usersByEmail.has(normalizedEmail) || cookieUsers.some((u) => u.email === normalizedEmail)) {
     return res.status(400).json({ detail: 'Email already registered' });
   }
 
@@ -70,6 +114,7 @@ app.post('/api/v1/auth/register', async (req, res) => {
     createdAt: new Date().toISOString(),
   };
   usersByEmail.set(normalizedEmail, user);
+  writeCookieUsers(res, [...cookieUsers, { email: normalizedEmail, hashedPassword }]);
 
   return res.status(201).json({ id: user.id, email: user.email });
 });
@@ -78,7 +123,15 @@ app.post('/api/v1/auth/token', async (req, res) => {
   const email = (req.body?.username || req.body?.email || '').trim().toLowerCase();
   const password = req.body?.password || '';
 
-  const user = usersByEmail.get(email);
+  let user = usersByEmail.get(email);
+  if (!user) {
+    const cookieUser = readCookieUsers(req).find((u) => u.email === email);
+    if (cookieUser) {
+      user = { email: cookieUser.email, hashedPassword: cookieUser.hashedPassword };
+      usersByEmail.set(email, user);
+    }
+  }
+
   if (!user) {
     return res.status(401).json({ detail: 'Incorrect email or password' });
   }

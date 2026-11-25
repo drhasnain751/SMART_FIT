@@ -8,6 +8,7 @@ console.log(`API is connecting to: ${baseURL}`); // A helpful log to see which U
 
 const api = axios.create({
   baseURL: baseURL,
+  withCredentials: true,
 });
 
 // Interceptor to add the JWT token to every request
