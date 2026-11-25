@@ -1,0 +1,29 @@
+:: Delete build/dist folder
+rmdir /s /q dist
+
+:: Delete node_modules
+rmdir /s /q node_modules
+
+:: Delete package-lock.json
+del /f package-lock.json
+
+
+:: Clear npm cache
+npm cache clean --force
+
+
+:: Again Install Dependencies
+npm install
+
+
+:: Again Build
+npm run build
+
+
+
+:: Run Locally that buil (if you have multiple pages in web app)
+npx serve dist
+
+
+:: Run Locally that buil (if you have single page in web app)
+npx serve -s dist

@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>d27a429d93ec44a1bdb3b9764321e721</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div id="9bd32ed3" class="cell markdown">
+<h1
+id="smartfit-ai-diet-plan-generator-customized-for-fooddata-central">SmartFit
+AI: Diet Plan Generator (Customized for FoodData Central)</h1>
+<h3
+id="goal-to-create-a-rule-based-engine-that-generates-a-personalized-daily-meal-plan-using-the-fda_approved_food_items_w_nutrient_infocsv-dataset"><strong>Goal:</strong>
+To create a rule-based engine that generates a personalized daily meal
+plan using the <code>fda_approved_food_items_w_nutrient_info.csv</code>
+dataset.</h3>
+<p><strong>This notebook will perform the following steps:</strong></p>
+<ol>
+<li><strong>Load and Clean:</strong> Load the dataset and preprocess it.
+This involves selecting relevant columns, renaming them for clarity, and
+handling missing values.</li>
+<li><strong>Define Nutritional Logic:</strong> Implement standard
+formulas for calculating a user's Total Daily Energy Expenditure (TDEE)
+and macronutrient targets.</li>
+<li><strong>Build the Generator:</strong> Create a function that takes a
+user's nutritional targets and uses a greedy algorithm to build a meal
+plan. The logic will be specifically designed to work with nutrient
+values provided <strong>per 100g</strong>.</li>
+<li><strong>Test the Generator:</strong> Run the entire pipeline with a
+sample user profile to generate a full day's meal plan and verify the
+results.</li>
+</ol>
+</div>
+<div id="5b1a0c76" class="cell code" data-execution_count="82">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Full path to your CSV file on your local machine</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="vs">r&#39;C:\Users\MUHAMMAD ZAIN\Desktop\SMART_FIT\data_sets\fda_approved_food_items_w_nutrient_info.csv&#39;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    df_food <span class="op">=</span> pd.read_csv(file_path)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Dataset loaded successfully!&quot;</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="cf">except</span> <span class="pp">FileNotFoundError</span>:</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Error: File not found at &#39;</span><span class="sc">{</span>file_path<span class="sc">}</span><span class="ss">&#39;&quot;</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    df_food <span class="op">=</span> <span class="va">None</span></span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>C:\Users\MUHAMMAD ZAIN\AppData\Local\Temp\ipykernel_14996\1155416511.py:7: DtypeWarning: Columns (4) have mixed types. Specify dtype option on import or set low_memory=False.
+  df_food = pd.read_csv(file_path)
+</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>Dataset loaded successfully!
+</code></pre>
+</div>
+</div>
+<div id="019438a4" class="cell code" data-execution_count="83">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df_food.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="83">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>fdc_id</th>
+      <th>brand_owner</th>
+      <th>description</th>
+      <th>ingredients</th>
+      <th>gtin_upc</th>
+      <th>serving_size</th>
+      <th>serving_size_unit</th>
+      <th>branded_food_category</th>
+      <th>modified_date</th>
+      <th>available_date</th>
+      <th>...</th>
+      <th>Thiamin-MG</th>
+      <th>Total lipid (fat)-G</th>
+      <th>Total sugar alcohols-G</th>
+      <th>Vitamin A, IU-IU</th>
+      <th>Vitamin B-12-UG</th>
+      <th>Vitamin B-6-MG</th>
+      <th>Vitamin C, total ascorbic acid-MG</th>
+      <th>Vitamin D (D2 + D3), International Units-IU</th>
+      <th>Vitamin D (D2 + D3)-UG</th>
+      <th>Zinc, Zn-MG</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1105904</td>
+      <td>Richardson Oilseed Products (US) Limited</td>
+      <td>WESSON Vegetable Oil 1 GAL</td>
+      <td>Vegetable Oil</td>
+      <td>27000612323</td>
+      <td>15.0</td>
+      <td>ml</td>
+      <td>Oils Edible</td>
+      <td>2020-10-02</td>
+      <td>2020-11-13</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>93.33</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1105905</td>
+      <td>CAMPBELL SOUP COMPANY</td>
+      <td>SWANSON BROTH BEEF</td>
+      <td>INGREDIENTS: BEEF STOCK, CONTAINS LESS THAN 2%...</td>
+      <td>51000198808</td>
+      <td>240.0</td>
+      <td>ml</td>
+      <td>Herbs/Spices/Extracts</td>
+      <td>2020-09-12</td>
+      <td>2020-11-13</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1105906</td>
+      <td>CAMPBELL SOUP COMPANY</td>
+      <td>CAMPBELL'S SLOW KETTLE SOUP CLAM CHOWDER</td>
+      <td>INGREDIENTS: CLAM STOCK, POTATOES, CLAMS, CREA...</td>
+      <td>51000213273</td>
+      <td>440.0</td>
+      <td>g</td>
+      <td>Prepared Soups</td>
+      <td>2020-09-01</td>
+      <td>2020-11-13</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>5.31</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1105907</td>
+      <td>CAMPBELL SOUP COMPANY</td>
+      <td>CAMPBELL'S SLOW KETTLE SOUP CHEESE BROCCOLI</td>
+      <td>INGREDIENTS: WATER, CREAM, BROCCOLI, CELERY, V...</td>
+      <td>51000213303</td>
+      <td>440.0</td>
+      <td>g</td>
+      <td>Prepared Soups</td>
+      <td>2020-09-01</td>
+      <td>2020-11-13</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>6.12</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1105908</td>
+      <td>CAMPBELL SOUP COMPANY</td>
+      <td>SWANSON BROTH CHICKEN</td>
+      <td>INGREDIENTS: CHICKEN STOCK, CONTAINS LESS THAN...</td>
+      <td>51000224637</td>
+      <td>240.0</td>
+      <td>ml</td>
+      <td>Herbs/Spices/Extracts</td>
+      <td>2020-10-03</td>
+      <td>2020-11-13</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 45 columns</p>
+</div>
+</div>
+</div>
+<div id="343070b1" class="cell code" data-execution_count="84">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div>
+</div>
+<div id="000fd461" class="cell markdown">
+<h3 id="step-2-data-exploration-and-preprocessing">Step 2: Data
+Exploration and Preprocessing</h3>
+<p>The FoodData Central dataset is very rich but also complex. We need
+to simplify it for our goal.</p>
+<p><strong>Our plan:</strong></p>
+<ol>
+<li><strong>Select essential columns:</strong> We only need the food's
+description and its core nutrient values (Calories, Protein, Fat,
+Carbs).</li>
+<li><strong>Rename columns:</strong> Use simpler names for easier access
+(e.g., <code>Energy_kcal</code> -&gt; <code>Calories</code>).</li>
+<li><strong>Handle data types:</strong> Ensure all nutrient columns are
+numeric.</li>
+<li><strong>Filter invalid data:</strong> Remove rows where essential
+nutrients are missing or are zero, as these are not useful for meal
+planning.</li>
+</ol>
+</div>
+<div id="c6bbc295" class="cell code" data-execution_count="86">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># @title Step 2: Data Cleaning (FIXED &amp; MORE ROBUST)</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> df_food <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># --- DIAGNOSTIC STEP: Print all available columns to find the correct names ---</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;--- All Columns in your CSV file ---&quot;</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(df_food.columns.tolist())</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;-&quot;</span> <span class="op">*</span> <span class="dv">35</span>)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1. Define the columns we want to keep and their new names.</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="co">#    I have updated the keys based on the likely correct names.</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="co">#    The original names are on the left, our new, simple names are on the right.</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    columns_to_keep <span class="op">=</span> {</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;description&#39;</span>: <span class="st">&#39;Food&#39;</span>,</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;branded_food_category&#39;</span>: <span class="st">&#39;Category&#39;</span>,</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Energy-KCAL&#39;</span>: <span class="st">&#39;Calories&#39;</span>,         <span class="co">#&lt;-- LIKELY FIX 1: Changed &#39;Energy_kcal&#39; to &#39;Energy-KCAL&#39;</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Protein-G&#39;</span>: <span class="st">&#39;Protein&#39;</span>,           <span class="co">#&lt;-- LIKELY FIX 2: Changed &#39;Protein_g&#39; to &#39;Protein-G&#39;</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Total lipid (fat)-G&#39;</span>: <span class="st">&#39;Fat&#39;</span>,</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Carbohydrate, by difference-G&#39;</span>: <span class="st">&#39;Carbs&#39;</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Check if all our expected old names exist in the dataframe&#39;s columns</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    missing_cols <span class="op">=</span> [col <span class="cf">for</span> col <span class="kw">in</span> columns_to_keep.keys() <span class="cf">if</span> col <span class="kw">not</span> <span class="kw">in</span> df_food.columns]</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> missing_cols:</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\n</span><span class="ss">ERROR: The following columns were not found in your file: </span><span class="sc">{</span>missing_cols<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;Please check the column list printed above and update the &#39;columns_to_keep&#39; dictionary in this cell.&quot;</span>)</span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 2. Select and rename the columns</span></span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>        df_food_cleaned <span class="op">=</span> df_food[<span class="bu">list</span>(columns_to_keep.keys())].rename(columns<span class="op">=</span>columns_to_keep)</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 3. Convert nutrient columns to numeric, forcing errors to NaN</span></span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>        nutrient_cols <span class="op">=</span> [<span class="st">&#39;Calories&#39;</span>, <span class="st">&#39;Protein&#39;</span>, <span class="st">&#39;Fat&#39;</span>, <span class="st">&#39;Carbs&#39;</span>]</span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> col <span class="kw">in</span> nutrient_cols:</span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>            df_food_cleaned[col] <span class="op">=</span> pd.to_numeric(df_food_cleaned[col], errors<span class="op">=</span><span class="st">&#39;coerce&#39;</span>)</span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 4. Drop rows where any of the essential nutrients are missing (NaN)</span></span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a>        df_food_cleaned.dropna(subset<span class="op">=</span>nutrient_cols, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 5. Remove foods with 0 calories</span></span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a>        df_food_cleaned <span class="op">=</span> df_food_cleaned[df_food_cleaned[<span class="st">&#39;Calories&#39;</span>] <span class="op">&gt;</span> <span class="dv">0</span>].copy()</span>
+<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 6. Reset index after dropping rows</span></span>
+<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a>        df_food_cleaned.reset_index(drop<span class="op">=</span><span class="va">True</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">--- Cleaned and Processed Food DataFrame ---&quot;</span>)</span>
+<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f&quot;Dataset reduced to </span><span class="sc">{</span><span class="bu">len</span>(df_food_cleaned)<span class="sc">}</span><span class="ss"> usable food items.&quot;</span>)</span>
+<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a>        df_food_cleaned.info()</span>
+<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Sample of cleaned data:&quot;</span>)</span>
+<span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(df_food_cleaned.head())</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>--- All Columns in your CSV file ---
+[&#39;fdc_id&#39;, &#39;brand_owner&#39;, &#39;description&#39;, &#39;ingredients&#39;, &#39;gtin_upc&#39;, &#39;serving_size&#39;, &#39;serving_size_unit&#39;, &#39;branded_food_category&#39;, &#39;modified_date&#39;, &#39;available_date&#39;, &#39;Calcium, Ca-MG&#39;, &#39;Carbohydrate, by difference-G&#39;, &#39;Cholesterol-MG&#39;, &#39;Copper, Cu-MG&#39;, &#39;Energy-KCAL&#39;, &#39;Fatty acids, total monounsaturated-G&#39;, &#39;Fatty acids, total polyunsaturated-G&#39;, &#39;Fatty acids, total saturated-G&#39;, &#39;Fatty acids, total trans-G&#39;, &#39;Fiber, soluble-G&#39;, &#39;Fiber, total dietary-G&#39;, &#39;Folate, total-UG&#39;, &#39;Folic acid-UG&#39;, &#39;Iron, Fe-MG&#39;, &#39;Magnesium, Mg-MG&#39;, &#39;Manganese, Mn-MG&#39;, &#39;Niacin-MG&#39;, &#39;Pantothenic acid-MG&#39;, &#39;Phosphorus, P-MG&#39;, &#39;Potassium, K-MG&#39;, &#39;Protein-G&#39;, &#39;Riboflavin-MG&#39;, &#39;Sodium, Na-MG&#39;, &#39;Sugars, added-G&#39;, &#39;Sugars, total including NLEA-G&#39;, &#39;Thiamin-MG&#39;, &#39;Total lipid (fat)-G&#39;, &#39;Total sugar alcohols-G&#39;, &#39;Vitamin A, IU-IU&#39;, &#39;Vitamin B-12-UG&#39;, &#39;Vitamin B-6-MG&#39;, &#39;Vitamin C, total ascorbic acid-MG&#39;, &#39;Vitamin D (D2 + D3), International Units-IU&#39;, &#39;Vitamin D (D2 + D3)-UG&#39;, &#39;Zinc, Zn-MG&#39;]
+-----------------------------------
+
+--- Cleaned and Processed Food DataFrame ---
+Dataset reduced to 1686202 usable food items.
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 1686202 entries, 0 to 1686201
+Data columns (total 6 columns):
+ #   Column    Non-Null Count    Dtype  
+---  ------    --------------    -----  
+ 0   Food      1686201 non-null  object 
+ 1   Category  1685632 non-null  object 
+ 2   Calories  1686202 non-null  float64
+ 3   Protein   1686202 non-null  float64
+ 4   Fat       1686202 non-null  float64
+ 5   Carbs     1686202 non-null  float64
+dtypes: float64(4), object(2)
+memory usage: 77.2+ MB
+
+Sample of cleaned data:
+                                          Food               Category  \
+0                   WESSON Vegetable Oil 1 GAL            Oils Edible   
+1                           SWANSON BROTH BEEF  Herbs/Spices/Extracts   
+2     CAMPBELL&#39;S SLOW KETTLE SOUP CLAM CHOWDER         Prepared Soups   
+3  CAMPBELL&#39;S SLOW KETTLE SOUP CHEESE BROCCOLI         Prepared Soups   
+4                        SWANSON BROTH CHICKEN  Herbs/Spices/Extracts   
+
+   Calories  Protein    Fat  Carbs  
+0     867.0     0.00  93.33   0.00  
+1       4.0     0.83   0.00   0.42  
+2      82.0     2.45   5.31   6.12  
+3      82.0     1.22   6.12   5.31  
+4       4.0     0.83   0.00   0.42  
+</code></pre>
+</div>
+</div>
+<div id="8941b20a" class="cell markdown">
+<h3 id="step-3-define-nutritional-logic--formulas">Step 3: Define
+Nutritional Logic &amp; Formulas</h3>
+<p>This section defines the scientific foundation for our diet planner.
+We'll create two key functions:</p>
+<ol>
+<li><strong><code>calculate_tdee</code></strong>: This function will
+implement the well-known Harris-Benedict Equation to estimate a user's
+Total Daily Energy Expenditure (TDEE), which is the number of calories
+they burn per day.</li>
+<li><strong><code>calculate_macros</code></strong>: Based on the TDEE
+and the user's specific goal (e.g., fat loss, muscle gain), this
+function will calculate the target daily intake of macronutrients:
+protein, carbohydrates, and fat.</li>
+</ol>
+</div>
+<div id="235973ac" class="cell code" data-execution_count="87">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># @title TDEE and Macro Calculation Functions</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_tdee(gender, weight_kg, height_cm, age, activity_level):</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co">    Calculates Total Daily Energy Expenditure (TDEE) using Harris-Benedict Equation.</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co">    Activity Levels (multiplier):</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co">    - 1.2: Sedentary (little or no exercise)</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co">    - 1.375: Lightly active (light exercise/sports 1-3 days/week)</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co">    - 1.55: Moderately active (moderate exercise/sports 3-5 days/week)</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="co">    - 1.725: Very active (hard exercise/sports 6-7 days a week)</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> gender.lower() <span class="op">==</span> <span class="st">&#39;male&#39;</span>:</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>        bmr <span class="op">=</span> <span class="fl">88.362</span> <span class="op">+</span> (<span class="fl">13.397</span> <span class="op">*</span> weight_kg) <span class="op">+</span> (<span class="fl">4.799</span> <span class="op">*</span> height_cm) <span class="op">-</span> (<span class="fl">5.677</span> <span class="op">*</span> age)</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>: <span class="co"># assumes female</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>        bmr <span class="op">=</span> <span class="fl">447.593</span> <span class="op">+</span> (<span class="fl">9.247</span> <span class="op">*</span> weight_kg) <span class="op">+</span> (<span class="fl">3.098</span> <span class="op">*</span> height_cm) <span class="op">-</span> (<span class="fl">4.330</span> <span class="op">*</span> age)</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> bmr <span class="op">*</span> activity_level</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calculate_macros(tdee, goal):</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a><span class="co">    Calculates macronutrient targets based on TDEE and a goal.</span></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a><span class="co">    Goals: &#39;fat_loss&#39; (-500 kcal), &#39;muscle_gain&#39; (+500 kcal), &#39;maintenance&#39;</span></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> goal <span class="op">==</span> <span class="st">&#39;fat_loss&#39;</span>:</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>        calorie_target <span class="op">=</span> tdee <span class="op">-</span> <span class="dv">500</span></span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> goal <span class="op">==</span> <span class="st">&#39;muscle_gain&#39;</span>:</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>        calorie_target <span class="op">=</span> tdee <span class="op">+</span> <span class="dv">500</span></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>: <span class="co"># maintenance</span></span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>        calorie_target <span class="op">=</span> tdee</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Standard macro split: 40% Carbs, 30% Protein, 30% Fat</span></span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1g Protein = 4 kcal, 1g Carb = 4 kcal, 1g Fat = 9 kcal</span></span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>    macros <span class="op">=</span> {</span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;calories&#39;</span>: calorie_target,</span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;protein&#39;</span>: (calorie_target <span class="op">*</span> <span class="fl">0.30</span>) <span class="op">/</span> <span class="dv">4</span>,</span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;carbs&#39;</span>: (calorie_target <span class="op">*</span> <span class="fl">0.40</span>) <span class="op">/</span> <span class="dv">4</span>,</span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;fat&#39;</span>: (calorie_target <span class="op">*</span> <span class="fl">0.30</span>) <span class="op">/</span> <span class="dv">9</span></span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Return rounded values</span></span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {k: <span class="bu">round</span>(v) <span class="cf">for</span> k, v <span class="kw">in</span> macros.items()}</span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a><span class="co"># Quick test to ensure the functions work</span></span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>test_tdee <span class="op">=</span> calculate_tdee(<span class="st">&#39;male&#39;</span>, <span class="dv">80</span>, <span class="dv">180</span>, <span class="dv">30</span>, <span class="fl">1.55</span>)</span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a>test_macros <span class="op">=</span> calculate_macros(test_tdee, <span class="st">&#39;muscle_gain&#39;</span>)</span>
+<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Test TDEE: </span><span class="sc">{</span><span class="bu">round</span>(test_tdee)<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Test Macros: </span><span class="sc">{</span>test_macros<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Test TDEE: 2873
+Test Macros: {&#39;calories&#39;: 3373, &#39;protein&#39;: 253, &#39;carbs&#39;: 337, &#39;fat&#39;: 112}
+</code></pre>
+</div>
+</div>
+<div id="c5d8013c" class="cell markdown">
+<h3 id="step-4-build-the-meal-generator-function">Step 4: Build the Meal
+Generator Function</h3>
+<p>This is the core "AI" of our diet planner. We will create the
+<code>generate_diet_plan</code> function that uses a <strong>greedy
+algorithm</strong> to assemble a meal plan.</p>
+<p><strong>How it works:</strong></p>
+<ul>
+<li>It takes the user's daily nutrient targets as input.</li>
+<li>It iterates through each meal (Breakfast, Lunch, Dinner), allocating
+a percentage of the daily calories to each.</li>
+<li>For each meal, it intelligently selects several food items from our
+cleaned dataset. It calculates a realistic portion size (in grams) for
+each food to try and meet the meal's calorie target.</li>
+<li>The function is designed to be "smart" by calculating portion sizes
+based on the food's nutrient density, rather than just picking a random
+amount.</li>
+</ul>
+</div>
+<div id="b784c90f" class="cell code" data-execution_count="88">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># @title The Diet Plan Generator Function</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> generate_diet_plan(df, daily_targets):</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co">    Generates a daily meal plan using a greedy algorithm.</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="co">    All nutrient values in the dataframe are per 100g.</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="co">    Args:</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="co">        df (pd.DataFrame): The cleaned food dataframe.</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="co">        daily_targets (dict): A dictionary with target &#39;calories&#39;, &#39;protein&#39;, &#39;carbs&#39;, &#39;fat&#39;.</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a><span class="co">        dict: A structured meal plan.</span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>    meal_plan <span class="op">=</span> {</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Breakfast&#39;</span>: {<span class="st">&#39;items&#39;</span>: [], <span class="st">&#39;totals&#39;</span>: {<span class="st">&#39;Calories&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Protein&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Fat&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Carbs&#39;</span>: <span class="dv">0</span>}},</span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Lunch&#39;</span>: {<span class="st">&#39;items&#39;</span>: [], <span class="st">&#39;totals&#39;</span>: {<span class="st">&#39;Calories&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Protein&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Fat&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Carbs&#39;</span>: <span class="dv">0</span>}},</span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Dinner&#39;</span>: {<span class="st">&#39;items&#39;</span>: [], <span class="st">&#39;totals&#39;</span>: {<span class="st">&#39;Calories&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Protein&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Fat&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Carbs&#39;</span>: <span class="dv">0</span>}},</span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Meal calorie distribution</span></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>    meal_distribution <span class="op">=</span> {<span class="st">&#39;Breakfast&#39;</span>: <span class="fl">0.25</span>, <span class="st">&#39;Lunch&#39;</span>: <span class="fl">0.40</span>, <span class="st">&#39;Dinner&#39;</span>: <span class="fl">0.35</span>}</span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> meal_name, percentage <span class="kw">in</span> meal_distribution.items():</span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>        meal_targets_calories <span class="op">=</span> daily_targets[<span class="st">&#39;calories&#39;</span>] <span class="op">*</span> percentage</span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>        meal_df <span class="op">=</span> meal_plan[meal_name]</span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Add 2-3 items per meal</span></span>
+<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(random.randint(<span class="dv">2</span>, <span class="dv">3</span>)):</span>
+<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Calculate remaining calories needed for this meal</span></span>
+<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a>            calories_needed <span class="op">=</span> meal_targets_calories <span class="op">-</span> meal_df[<span class="st">&#39;totals&#39;</span>][<span class="st">&#39;Calories&#39;</span>]</span>
+<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> calories_needed <span class="op">&lt;=</span> <span class="dv">50</span>: <span class="co"># If meal is already full, stop</span></span>
+<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a>                <span class="cf">break</span></span>
+<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Find a suitable food item</span></span>
+<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a>            <span class="co"># We want an item that can fill a decent portion of the remaining calories</span></span>
+<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Let&#39;s target a food that has between 100 and 500 calories per 100g to get variety</span></span>
+<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a>            potential_foods <span class="op">=</span> df[</span>
+<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a>                (df[<span class="st">&#39;Calories&#39;</span>] <span class="op">&gt;</span> <span class="dv">100</span>) <span class="op">&amp;</span> (df[<span class="st">&#39;Calories&#39;</span>] <span class="op">&lt;</span> <span class="dv">500</span>)</span>
+<span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a>            ]</span>
+<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> potential_foods.empty: <span class="co"># Fallback if no foods in range</span></span>
+<span id="cb10-43"><a href="#cb10-43" aria-hidden="true" tabindex="-1"></a>                potential_foods <span class="op">=</span> df[df[<span class="st">&#39;Calories&#39;</span>] <span class="op">&gt;</span> <span class="dv">0</span>]</span>
+<span id="cb10-44"><a href="#cb10-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-45"><a href="#cb10-45" aria-hidden="true" tabindex="-1"></a>            food_sample <span class="op">=</span> potential_foods.sample(<span class="dv">1</span>).iloc[<span class="dv">0</span>]</span>
+<span id="cb10-46"><a href="#cb10-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-47"><a href="#cb10-47" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Calculate portion size to meet a fraction of the remaining calories</span></span>
+<span id="cb10-48"><a href="#cb10-48" aria-hidden="true" tabindex="-1"></a>            <span class="co"># This heuristic prevents one food item from dominating the meal</span></span>
+<span id="cb10-49"><a href="#cb10-49" aria-hidden="true" tabindex="-1"></a>            num_items_left_to_add <span class="op">=</span> (<span class="dv">3</span> <span class="op">-</span> <span class="bu">len</span>(meal_df[<span class="st">&#39;items&#39;</span>]))</span>
+<span id="cb10-50"><a href="#cb10-50" aria-hidden="true" tabindex="-1"></a>            target_cals_for_item <span class="op">=</span> calories_needed <span class="op">/</span> num_items_left_to_add <span class="cf">if</span> num_items_left_to_add <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> calories_needed</span>
+<span id="cb10-51"><a href="#cb10-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-52"><a href="#cb10-52" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Portion size (g) = (Target Calories / Calories per 100g) * 100</span></span>
+<span id="cb10-53"><a href="#cb10-53" aria-hidden="true" tabindex="-1"></a>            portion_g <span class="op">=</span> <span class="bu">round</span>((target_cals_for_item <span class="op">/</span> food_sample[<span class="st">&#39;Calories&#39;</span>]) <span class="op">*</span> <span class="dv">100</span>)</span>
+<span id="cb10-54"><a href="#cb10-54" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Clamp portion size to a realistic range (e.g., 50g to 350g)</span></span>
+<span id="cb10-55"><a href="#cb10-55" aria-hidden="true" tabindex="-1"></a>            portion_g <span class="op">=</span> <span class="bu">min</span>(<span class="bu">max</span>(portion_g, <span class="dv">50</span>), <span class="dv">350</span>)</span>
+<span id="cb10-56"><a href="#cb10-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-57"><a href="#cb10-57" aria-hidden="true" tabindex="-1"></a>            portion_multiplier <span class="op">=</span> portion_g <span class="op">/</span> <span class="fl">100.0</span></span>
+<span id="cb10-58"><a href="#cb10-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-59"><a href="#cb10-59" aria-hidden="true" tabindex="-1"></a>            item <span class="op">=</span> {</span>
+<span id="cb10-60"><a href="#cb10-60" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Food&#39;</span>: food_sample[<span class="st">&#39;Food&#39;</span>],</span>
+<span id="cb10-61"><a href="#cb10-61" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Portion (g)&#39;</span>: portion_g,</span>
+<span id="cb10-62"><a href="#cb10-62" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Calories&#39;</span>: <span class="bu">round</span>(food_sample[<span class="st">&#39;Calories&#39;</span>] <span class="op">*</span> portion_multiplier),</span>
+<span id="cb10-63"><a href="#cb10-63" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Protein&#39;</span>: <span class="bu">round</span>(food_sample[<span class="st">&#39;Protein&#39;</span>] <span class="op">*</span> portion_multiplier),</span>
+<span id="cb10-64"><a href="#cb10-64" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Fat&#39;</span>: <span class="bu">round</span>(food_sample[<span class="st">&#39;Fat&#39;</span>] <span class="op">*</span> portion_multiplier),</span>
+<span id="cb10-65"><a href="#cb10-65" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Carbs&#39;</span>: <span class="bu">round</span>(food_sample[<span class="st">&#39;Carbs&#39;</span>] <span class="op">*</span> portion_multiplier)</span>
+<span id="cb10-66"><a href="#cb10-66" aria-hidden="true" tabindex="-1"></a>            }</span>
+<span id="cb10-67"><a href="#cb10-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-68"><a href="#cb10-68" aria-hidden="true" tabindex="-1"></a>            meal_df[<span class="st">&#39;items&#39;</span>].append(item)</span>
+<span id="cb10-69"><a href="#cb10-69" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Update meal totals</span></span>
+<span id="cb10-70"><a href="#cb10-70" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> key <span class="kw">in</span> [<span class="st">&#39;Calories&#39;</span>, <span class="st">&#39;Protein&#39;</span>, <span class="st">&#39;Fat&#39;</span>, <span class="st">&#39;Carbs&#39;</span>]:</span>
+<span id="cb10-71"><a href="#cb10-71" aria-hidden="true" tabindex="-1"></a>                meal_df[<span class="st">&#39;totals&#39;</span>][key] <span class="op">+=</span> item[key]</span>
+<span id="cb10-72"><a href="#cb10-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-73"><a href="#cb10-73" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> meal_plan</span></code></pre></div>
+</div>
+<div id="85d5a045" class="cell markdown">
+<h3 id="step-5-test-the-full-pipeline">Step 5: Test the Full
+Pipeline</h3>
+<p>This is the final step where we bring everything together. We will
+simulate a real user request from start to finish.</p>
+<p><strong>The process:</strong></p>
+<ol>
+<li><strong>Define a sample user profile</strong> (you can edit this to
+see different results).</li>
+<li>Call our functions to <strong>calculate their unique nutritional
+needs</strong>.</li>
+<li>Pass these needs to the <strong><code>generate_diet_plan</code>
+function</strong>.</li>
+<li><strong>Print the final, structured meal plan</strong> and a summary
+comparing the plan's totals to the user's targets.</li>
+</ol>
+</div>
+<div id="8547fc0b" class="cell code" data-execution_count="89">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># @title Example Usage: Generating a Plan for a Sample User</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="st">&#39;df_food_cleaned&#39;</span> <span class="kw">in</span> <span class="bu">locals</span>() <span class="kw">and</span> <span class="kw">not</span> df_food_cleaned.empty:</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># --- 1. Define Sample User Profile ---</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># You can change these values to test different scenarios!</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    user_profile <span class="op">=</span> {</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;gender&#39;</span>: <span class="st">&#39;female&#39;</span>,</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;weight_kg&#39;</span>: <span class="dv">65</span>,</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;height_cm&#39;</span>: <span class="dv">170</span>,</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;age&#39;</span>: <span class="dv">25</span>,</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;activity_level&#39;</span>: <span class="fl">1.375</span>, <span class="co"># Lightly active</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;goal&#39;</span>: <span class="st">&#39;fat_loss&#39;</span>       <span class="co"># Options: &#39;muscle_gain&#39;, &#39;fat_loss&#39;, &#39;maintenance&#39;</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>    <span class="co"># --- 2. Calculate TDEE and Macros ---</span></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;--- Calculating User&#39;s Nutritional Needs ---&quot;</span>)</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>    user_tdee <span class="op">=</span> calculate_tdee(</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>        user_profile[<span class="st">&#39;gender&#39;</span>],</span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>        user_profile[<span class="st">&#39;weight_kg&#39;</span>],</span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>        user_profile[<span class="st">&#39;height_cm&#39;</span>],</span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>        user_profile[<span class="st">&#39;age&#39;</span>],</span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>        user_profile[<span class="st">&#39;activity_level&#39;</span>]</span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;User&#39;s estimated TDEE for maintenance: </span><span class="sc">{</span><span class="bu">round</span>(user_tdee)<span class="sc">}</span><span class="ss"> kcal&quot;</span>)</span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>    user_macros <span class="op">=</span> calculate_macros(user_tdee, user_profile[<span class="st">&#39;goal&#39;</span>])</span>
+<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="ch">\n</span><span class="ss">User&#39;s Daily Targets for &#39;</span><span class="sc">{</span>user_profile[<span class="st">&#39;goal&#39;</span>]<span class="sc">}</span><span class="ss">&#39;:&quot;</span>)</span>
+<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(json.dumps(user_macros, indent<span class="op">=</span><span class="dv">2</span>))</span>
+<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a>    <span class="co"># --- 3. Generate the Diet Plan ---</span></span>
+<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">--- Generating Diet Plan... ---&quot;</span>)</span>
+<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a>    final_diet_plan <span class="op">=</span> generate_diet_plan(df_food_cleaned, user_macros)</span>
+<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n\n</span><span class="st">&quot;</span> <span class="op">+</span> <span class="st">&quot;=&quot;</span><span class="op">*</span><span class="dv">20</span> <span class="op">+</span> <span class="st">&quot; GENERATED DIET PLAN &quot;</span> <span class="op">+</span> <span class="st">&quot;=&quot;</span><span class="op">*</span><span class="dv">20</span>)</span>
+<span id="cb11-34"><a href="#cb11-34" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(json.dumps(final_diet_plan, indent<span class="op">=</span><span class="dv">2</span>))</span>
+<span id="cb11-35"><a href="#cb11-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-36"><a href="#cb11-36" aria-hidden="true" tabindex="-1"></a>    <span class="co"># --- 4. Review and Compare Totals ---</span></span>
+<span id="cb11-37"><a href="#cb11-37" aria-hidden="true" tabindex="-1"></a>    total_calories <span class="op">=</span> <span class="bu">sum</span>(final_diet_plan[m][<span class="st">&#39;totals&#39;</span>][<span class="st">&#39;Calories&#39;</span>] <span class="cf">for</span> m <span class="kw">in</span> final_diet_plan)</span>
+<span id="cb11-38"><a href="#cb11-38" aria-hidden="true" tabindex="-1"></a>    total_protein <span class="op">=</span> <span class="bu">sum</span>(final_diet_plan[m][<span class="st">&#39;totals&#39;</span>][<span class="st">&#39;Protein&#39;</span>] <span class="cf">for</span> m <span class="kw">in</span> final_diet_plan)</span>
+<span id="cb11-39"><a href="#cb11-39" aria-hidden="true" tabindex="-1"></a>    total_carbs <span class="op">=</span> <span class="bu">sum</span>(final_diet_plan[m][<span class="st">&#39;totals&#39;</span>][<span class="st">&#39;Carbs&#39;</span>] <span class="cf">for</span> m <span class="kw">in</span> final_diet_plan)</span>
+<span id="cb11-40"><a href="#cb11-40" aria-hidden="true" tabindex="-1"></a>    total_fat <span class="op">=</span> <span class="bu">sum</span>(final_diet_plan[m][<span class="st">&#39;totals&#39;</span>][<span class="st">&#39;Fat&#39;</span>] <span class="cf">for</span> m <span class="kw">in</span> final_diet_plan)</span>
+<span id="cb11-41"><a href="#cb11-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-42"><a href="#cb11-42" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n\n</span><span class="st">&quot;</span> <span class="op">+</span> <span class="st">&quot;=&quot;</span><span class="op">*</span><span class="dv">20</span> <span class="op">+</span> <span class="st">&quot; PLAN TOTALS vs. TARGETS &quot;</span> <span class="op">+</span> <span class="st">&quot;=&quot;</span><span class="op">*</span><span class="dv">20</span>)</span>
+<span id="cb11-43"><a href="#cb11-43" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Calories: </span><span class="sc">{</span>total_calories<span class="sc">}</span><span class="ss"> / </span><span class="sc">{</span>user_macros[<span class="st">&#39;calories&#39;</span>]<span class="sc">}</span><span class="ss"> kcal&quot;</span>)</span>
+<span id="cb11-44"><a href="#cb11-44" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Protein:  </span><span class="sc">{</span>total_protein<span class="sc">}</span><span class="ss">g / </span><span class="sc">{</span>user_macros[<span class="st">&#39;protein&#39;</span>]<span class="sc">}</span><span class="ss">g&quot;</span>)</span>
+<span id="cb11-45"><a href="#cb11-45" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Carbs:    </span><span class="sc">{</span>total_carbs<span class="sc">}</span><span class="ss">g / </span><span class="sc">{</span>user_macros[<span class="st">&#39;carbs&#39;</span>]<span class="sc">}</span><span class="ss">g&quot;</span>)</span>
+<span id="cb11-46"><a href="#cb11-46" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;Fat:      </span><span class="sc">{</span>total_fat<span class="sc">}</span><span class="ss">g / </span><span class="sc">{</span>user_macros[<span class="st">&#39;fat&#39;</span>]<span class="sc">}</span><span class="ss">g&quot;</span>)</span>
+<span id="cb11-47"><a href="#cb11-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-48"><a href="#cb11-48" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb11-49"><a href="#cb11-49" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Error: `df_food_cleaned` DataFrame not found or is empty. Please run the cleaning steps first.&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>--- Calculating User&#39;s Nutritional Needs ---
+User&#39;s estimated TDEE for maintenance: 2017 kcal
+
+User&#39;s Daily Targets for &#39;fat_loss&#39;:
+{
+  &quot;calories&quot;: 1517,
+  &quot;protein&quot;: 114,
+  &quot;carbs&quot;: 152,
+  &quot;fat&quot;: 51
+}
+
+--- Generating Diet Plan... ---
+
+
+==================== GENERATED DIET PLAN ====================
+{
+  &quot;Breakfast&quot;: {
+    &quot;items&quot;: [
+      {
+        &quot;Food&quot;: &quot;BUTTER CHICKEN MINI NAANPANADAS A MINI EMPANADA FILLED WITH BUTTER CHICKEN &amp; CHEESE, BUTTER CHICKEN&quot;,
+        &quot;Portion (g)&quot;: 51,
+        &quot;Calories&quot;: 128,
+        &quot;Protein&quot;: 6,
+        &quot;Fat&quot;: 4,
+        &quot;Carbs&quot;: 18
+      },
+      {
+        &quot;Food&quot;: &quot;CRISPY MARSHMALLOW SQUARES&quot;,
+        &quot;Portion (g)&quot;: 50,
+        &quot;Calories&quot;: 204,
+        &quot;Protein&quot;: 2,
+        &quot;Fat&quot;: 6,
+        &quot;Carbs&quot;: 39
+      }
+    ],
+    &quot;totals&quot;: {
+      &quot;Calories&quot;: 332,
+      &quot;Protein&quot;: 8,
+      &quot;Fat&quot;: 10,
+      &quot;Carbs&quot;: 57
+    }
+  },
+  &quot;Lunch&quot;: {
+    &quot;items&quot;: [
+      {
+        &quot;Food&quot;: &quot;CHOCOLATE CHIP MUFFINS&quot;,
+        &quot;Portion (g)&quot;: 54,
+        &quot;Calories&quot;: 202,
+        &quot;Protein&quot;: 3,
+        &quot;Fat&quot;: 10,
+        &quot;Carbs&quot;: 26
+      },
+      {
+        &quot;Food&quot;: &quot;APPLE MAPLE VEGGIE BREAKFAST SAUSAGE&quot;,
+        &quot;Portion (g)&quot;: 105,
+        &quot;Calories&quot;: 202,
+        &quot;Protein&quot;: 6,
+        &quot;Fat&quot;: 6,
+        &quot;Carbs&quot;: 32
+      },
+      {
+        &quot;Food&quot;: &quot;SRIRACHA LIME CHILI WITH BEANS, SRIRACHA LIME&quot;,
+        &quot;Portion (g)&quot;: 135,
+        &quot;Calories&quot;: 202,
+        &quot;Protein&quot;: 10,
+        &quot;Fat&quot;: 9,
+        &quot;Carbs&quot;: 18
+      }
+    ],
+    &quot;totals&quot;: {
+      &quot;Calories&quot;: 606,
+      &quot;Protein&quot;: 19,
+      &quot;Fat&quot;: 25,
+      &quot;Carbs&quot;: 76
+    }
+  },
+  &quot;Dinner&quot;: {
+    &quot;items&quot;: [
+      {
+        &quot;Food&quot;: &quot;ITALIAN PRODUCTS, BLACK OLIVE PATE&quot;,
+        &quot;Portion (g)&quot;: 59,
+        &quot;Calories&quot;: 177,
+        &quot;Protein&quot;: 2,
+        &quot;Fat&quot;: 18,
+        &quot;Carbs&quot;: 2
+      },
+      {
+        &quot;Food&quot;: &quot;PIZZA&quot;,
+        &quot;Portion (g)&quot;: 76,
+        &quot;Calories&quot;: 176,
+        &quot;Protein&quot;: 7,
+        &quot;Fat&quot;: 6,
+        &quot;Carbs&quot;: 21
+      }
+    ],
+    &quot;totals&quot;: {
+      &quot;Calories&quot;: 353,
+      &quot;Protein&quot;: 9,
+      &quot;Fat&quot;: 24,
+      &quot;Carbs&quot;: 23
+    }
+  }
+}
+
+
+==================== PLAN TOTALS vs. TARGETS ====================
+Calories: 1291 / 1517 kcal
+Protein:  36g / 114g
+Carbs:    156g / 152g
+Fat:      59g / 51g
+</code></pre>
+</div>
+</div>
+<div id="4e513c46" class="cell markdown">
+<h3 id="step-6-improving-the-algorithm-protein-focused">Step 6:
+Improving the Algorithm (Protein-Focused)</h3>
+<p><strong>Analysis:</strong> Our first-generation algorithm
+successfully created a plan that was close in calories, but it
+significantly missed the protein target. This is because it was only
+optimized to fill a calorie budget.</p>
+<p><strong>Improvement:</strong> We will now create a <code>v2</code> of
+our generator. This version will use a <strong>protein-focused greedy
+strategy</strong>:</p>
+<ol>
+<li>For each meal, it will first calculate the protein target.</li>
+<li>It will specifically search for high-protein foods to meet this
+target.</li>
+<li>After the protein target is met, it will fill the remaining calorie
+budget with other foods to meet the carb and fat goals.</li>
+<li>We will also add logic to categorize foods into "meal types" to
+generate more logical meal combinations.</li>
+</ol>
+</div>
+<div id="4ea8ac64" class="cell code" data-execution_count="90">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># @title Step 6: The Improved Generator Function (v2 - Protein Focused)</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> generate_diet_plan_v2(df, daily_targets):</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co">    Generates a daily meal plan using a more intelligent, protein-focused greedy algorithm.</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="co">    Args:</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="co">        df (pd.DataFrame): The cleaned food dataframe.</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="co">        daily_targets (dict): A dictionary with target &#39;calories&#39;, &#39;protein&#39;, &#39;carbs&#39;, &#39;fat&#39;.</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="co">    Returns:</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="co">        dict: A structured meal plan.</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>    meal_plan <span class="op">=</span> {</span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Breakfast&#39;</span>: {<span class="st">&#39;items&#39;</span>: [], <span class="st">&#39;totals&#39;</span>: {<span class="st">&#39;Calories&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Protein&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Fat&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Carbs&#39;</span>: <span class="dv">0</span>}},</span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Lunch&#39;</span>: {<span class="st">&#39;items&#39;</span>: [], <span class="st">&#39;totals&#39;</span>: {<span class="st">&#39;Calories&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Protein&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Fat&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Carbs&#39;</span>: <span class="dv">0</span>}},</span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Dinner&#39;</span>: {<span class="st">&#39;items&#39;</span>: [], <span class="st">&#39;totals&#39;</span>: {<span class="st">&#39;Calories&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Protein&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Fat&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Carbs&#39;</span>: <span class="dv">0</span>}},</span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>    meal_distribution <span class="op">=</span> {<span class="st">&#39;Breakfast&#39;</span>: <span class="fl">0.25</span>, <span class="st">&#39;Lunch&#39;</span>: <span class="fl">0.40</span>, <span class="st">&#39;Dinner&#39;</span>: <span class="fl">0.35</span>}</span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Define some food categories for better meal cohesion</span></span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># We can infer these from the &#39;Category&#39; column</span></span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>    breakfast_foods <span class="op">=</span> df[df[<span class="st">&#39;Category&#39;</span>].<span class="bu">str</span>.contains(<span class="st">&#39;Breakfast&#39;</span>, case<span class="op">=</span><span class="va">False</span>, na<span class="op">=</span><span class="va">False</span>)]</span>
+<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a>    main_course_foods <span class="op">=</span> df[df[<span class="st">&#39;Category&#39;</span>].<span class="bu">str</span>.contains(<span class="st">&#39;Entrees|Prepared Meals|Meat&#39;</span>, case<span class="op">=</span><span class="va">False</span>, na<span class="op">=</span><span class="va">False</span>)]</span>
+<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> meal_name, percentage <span class="kw">in</span> meal_distribution.items():</span>
+<span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a>        meal_targets <span class="op">=</span> {k: v <span class="op">*</span> percentage <span class="cf">for</span> k, v <span class="kw">in</span> daily_targets.items()}</span>
+<span id="cb13-27"><a href="#cb13-27" aria-hidden="true" tabindex="-1"></a>        meal_df <span class="op">=</span> meal_plan[meal_name]</span>
+<span id="cb13-28"><a href="#cb13-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-29"><a href="#cb13-29" aria-hidden="true" tabindex="-1"></a>        <span class="co"># --- PROTEIN FIRST ---</span></span>
+<span id="cb13-30"><a href="#cb13-30" aria-hidden="true" tabindex="-1"></a>        protein_needed <span class="op">=</span> meal_targets[<span class="st">&#39;protein&#39;</span>]</span>
+<span id="cb13-31"><a href="#cb13-31" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Find high-protein foods (protein &gt; 10g per 100g)</span></span>
+<span id="cb13-32"><a href="#cb13-32" aria-hidden="true" tabindex="-1"></a>        high_protein_foods <span class="op">=</span> df[df[<span class="st">&#39;Protein&#39;</span>] <span class="op">&gt;</span> <span class="dv">10</span>]</span>
+<span id="cb13-33"><a href="#cb13-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-34"><a href="#cb13-34" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Use specific meal-type foods if available</span></span>
+<span id="cb13-35"><a href="#cb13-35" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> meal_name <span class="op">==</span> <span class="st">&#39;Breakfast&#39;</span> <span class="kw">and</span> <span class="kw">not</span> breakfast_foods.empty:</span>
+<span id="cb13-36"><a href="#cb13-36" aria-hidden="true" tabindex="-1"></a>            search_df <span class="op">=</span> breakfast_foods[breakfast_foods[<span class="st">&#39;Protein&#39;</span>] <span class="op">&gt;</span> <span class="dv">5</span>] <span class="co"># Lower protein threshold for breakfast</span></span>
+<span id="cb13-37"><a href="#cb13-37" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> <span class="kw">not</span> main_course_foods.empty:</span>
+<span id="cb13-38"><a href="#cb13-38" aria-hidden="true" tabindex="-1"></a>            search_df <span class="op">=</span> main_course_foods[main_course_foods[<span class="st">&#39;Protein&#39;</span>] <span class="op">&gt;</span> <span class="dv">10</span>]</span>
+<span id="cb13-39"><a href="#cb13-39" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>: <span class="co"># Fallback</span></span>
+<span id="cb13-40"><a href="#cb13-40" aria-hidden="true" tabindex="-1"></a>            search_df <span class="op">=</span> high_protein_foods</span>
+<span id="cb13-41"><a href="#cb13-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-42"><a href="#cb13-42" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> search_df.empty:</span>
+<span id="cb13-43"><a href="#cb13-43" aria-hidden="true" tabindex="-1"></a>            food_sample <span class="op">=</span> search_df.sample(<span class="dv">1</span>).iloc[<span class="dv">0</span>]</span>
+<span id="cb13-44"><a href="#cb13-44" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Calculate portion to meet ~75% of meal&#39;s protein target</span></span>
+<span id="cb13-45"><a href="#cb13-45" aria-hidden="true" tabindex="-1"></a>            target_protein_for_item <span class="op">=</span> protein_needed <span class="op">*</span> <span class="fl">0.75</span></span>
+<span id="cb13-46"><a href="#cb13-46" aria-hidden="true" tabindex="-1"></a>            portion_g <span class="op">=</span> <span class="bu">round</span>((target_protein_for_item <span class="op">/</span> food_sample[<span class="st">&#39;Protein&#39;</span>]) <span class="op">*</span> <span class="dv">100</span>) <span class="cf">if</span> food_sample[<span class="st">&#39;Protein&#39;</span>] <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb13-47"><a href="#cb13-47" aria-hidden="true" tabindex="-1"></a>            portion_g <span class="op">=</span> <span class="bu">min</span>(<span class="bu">max</span>(portion_g, <span class="dv">50</span>), <span class="dv">350</span>)</span>
+<span id="cb13-48"><a href="#cb13-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-49"><a href="#cb13-49" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Add this high-protein item</span></span>
+<span id="cb13-50"><a href="#cb13-50" aria-hidden="true" tabindex="-1"></a>            portion_multiplier <span class="op">=</span> portion_g <span class="op">/</span> <span class="fl">100.0</span></span>
+<span id="cb13-51"><a href="#cb13-51" aria-hidden="true" tabindex="-1"></a>            item <span class="op">=</span> {</span>
+<span id="cb13-52"><a href="#cb13-52" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Food&#39;</span>: food_sample[<span class="st">&#39;Food&#39;</span>], <span class="st">&#39;Portion (g)&#39;</span>: portion_g,</span>
+<span id="cb13-53"><a href="#cb13-53" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Calories&#39;</span>: <span class="bu">round</span>(food_sample[<span class="st">&#39;Calories&#39;</span>] <span class="op">*</span> portion_multiplier),</span>
+<span id="cb13-54"><a href="#cb13-54" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Protein&#39;</span>: <span class="bu">round</span>(food_sample[<span class="st">&#39;Protein&#39;</span>] <span class="op">*</span> portion_multiplier),</span>
+<span id="cb13-55"><a href="#cb13-55" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Fat&#39;</span>: <span class="bu">round</span>(food_sample[<span class="st">&#39;Fat&#39;</span>] <span class="op">*</span> portion_multiplier),</span>
+<span id="cb13-56"><a href="#cb13-56" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Carbs&#39;</span>: <span class="bu">round</span>(food_sample[<span class="st">&#39;Carbs&#39;</span>] <span class="op">*</span> portion_multiplier)</span>
+<span id="cb13-57"><a href="#cb13-57" aria-hidden="true" tabindex="-1"></a>            }</span>
+<span id="cb13-58"><a href="#cb13-58" aria-hidden="true" tabindex="-1"></a>            meal_df[<span class="st">&#39;items&#39;</span>].append(item)</span>
+<span id="cb13-59"><a href="#cb13-59" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> key <span class="kw">in</span> [<span class="st">&#39;Calories&#39;</span>, <span class="st">&#39;Protein&#39;</span>, <span class="st">&#39;Fat&#39;</span>, <span class="st">&#39;Carbs&#39;</span>]: meal_df[<span class="st">&#39;totals&#39;</span>][key] <span class="op">+=</span> item[key]</span>
+<span id="cb13-60"><a href="#cb13-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-61"><a href="#cb13-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-62"><a href="#cb13-62" aria-hidden="true" tabindex="-1"></a>        <span class="co"># --- FILLER FOODS FOR CALORIES ---</span></span>
+<span id="cb13-63"><a href="#cb13-63" aria-hidden="true" tabindex="-1"></a>        calories_needed <span class="op">=</span> meal_targets[<span class="st">&#39;calories&#39;</span>] <span class="op">-</span> meal_df[<span class="st">&#39;totals&#39;</span>][<span class="st">&#39;Calories&#39;</span>]</span>
+<span id="cb13-64"><a href="#cb13-64" aria-hidden="true" tabindex="-1"></a>        <span class="cf">while</span> calories_needed <span class="op">&gt;</span> <span class="dv">100</span> <span class="kw">and</span> <span class="bu">len</span>(meal_df[<span class="st">&#39;items&#39;</span>]) <span class="op">&lt;</span> <span class="dv">3</span>:</span>
+<span id="cb13-65"><a href="#cb13-65" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Find foods to fill the rest, prioritizing carbs</span></span>
+<span id="cb13-66"><a href="#cb13-66" aria-hidden="true" tabindex="-1"></a>            filler_foods <span class="op">=</span> df[df[<span class="st">&#39;Carbs&#39;</span>] <span class="op">&gt;</span> <span class="dv">15</span>]</span>
+<span id="cb13-67"><a href="#cb13-67" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> filler_foods.empty: <span class="cf">break</span> <span class="co"># stop if no filler foods found</span></span>
+<span id="cb13-68"><a href="#cb13-68" aria-hidden="true" tabindex="-1"></a>            food_sample <span class="op">=</span> filler_foods.sample(<span class="dv">1</span>).iloc[<span class="dv">0</span>]</span>
+<span id="cb13-69"><a href="#cb13-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-70"><a href="#cb13-70" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Calculate portion to fill remaining calories</span></span>
+<span id="cb13-71"><a href="#cb13-71" aria-hidden="true" tabindex="-1"></a>            portion_g <span class="op">=</span> <span class="bu">round</span>((calories_needed <span class="op">/</span> food_sample[<span class="st">&#39;Calories&#39;</span>]) <span class="op">*</span> <span class="dv">100</span>) <span class="cf">if</span> food_sample[<span class="st">&#39;Calories&#39;</span>] <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb13-72"><a href="#cb13-72" aria-hidden="true" tabindex="-1"></a>            portion_g <span class="op">=</span> <span class="bu">min</span>(<span class="bu">max</span>(portion_g, <span class="dv">50</span>), <span class="dv">300</span>)</span>
+<span id="cb13-73"><a href="#cb13-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-74"><a href="#cb13-74" aria-hidden="true" tabindex="-1"></a>            portion_multiplier <span class="op">=</span> portion_g <span class="op">/</span> <span class="fl">100.0</span></span>
+<span id="cb13-75"><a href="#cb13-75" aria-hidden="true" tabindex="-1"></a>            item <span class="op">=</span> {</span>
+<span id="cb13-76"><a href="#cb13-76" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Food&#39;</span>: food_sample[<span class="st">&#39;Food&#39;</span>], <span class="st">&#39;Portion (g)&#39;</span>: portion_g,</span>
+<span id="cb13-77"><a href="#cb13-77" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Calories&#39;</span>: <span class="bu">round</span>(food_sample[<span class="st">&#39;Calories&#39;</span>] <span class="op">*</span> portion_multiplier),</span>
+<span id="cb13-78"><a href="#cb13-78" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Protein&#39;</span>: <span class="bu">round</span>(food_sample[<span class="st">&#39;Protein&#39;</span>] <span class="op">*</span> portion_multiplier),</span>
+<span id="cb13-79"><a href="#cb13-79" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Fat&#39;</span>: <span class="bu">round</span>(food_sample[<span class="st">&#39;Fat&#39;</span>] <span class="op">*</span> portion_multiplier),</span>
+<span id="cb13-80"><a href="#cb13-80" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Carbs&#39;</span>: <span class="bu">round</span>(food_sample[<span class="st">&#39;Carbs&#39;</span>] <span class="op">*</span> portion_multiplier)</span>
+<span id="cb13-81"><a href="#cb13-81" aria-hidden="true" tabindex="-1"></a>            }</span>
+<span id="cb13-82"><a href="#cb13-82" aria-hidden="true" tabindex="-1"></a>            meal_df[<span class="st">&#39;items&#39;</span>].append(item)</span>
+<span id="cb13-83"><a href="#cb13-83" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> key <span class="kw">in</span> [<span class="st">&#39;Calories&#39;</span>, <span class="st">&#39;Protein&#39;</span>, <span class="st">&#39;Fat&#39;</span>, <span class="st">&#39;Carbs&#39;</span>]: meal_df[<span class="st">&#39;totals&#39;</span>][key] <span class="op">+=</span> item[key]</span>
+<span id="cb13-84"><a href="#cb13-84" aria-hidden="true" tabindex="-1"></a>            calories_needed <span class="op">=</span> meal_targets[<span class="st">&#39;calories&#39;</span>] <span class="op">-</span> meal_df[<span class="st">&#39;totals&#39;</span>][<span class="st">&#39;Calories&#39;</span>]</span>
+<span id="cb13-85"><a href="#cb13-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-86"><a href="#cb13-86" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> meal_plan</span>
+<span id="cb13-87"><a href="#cb13-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-88"><a href="#cb13-88" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Let&#39;s test the v2 generator with the same user profile ---</span></span>
+<span id="cb13-89"><a href="#cb13-89" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;--- Testing Improved Generator (v2) ---&quot;</span>)</span>
+<span id="cb13-90"><a href="#cb13-90" aria-hidden="true" tabindex="-1"></a>final_diet_plan_v2 <span class="op">=</span> generate_diet_plan_v2(df_food_cleaned, user_macros)</span>
+<span id="cb13-91"><a href="#cb13-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-92"><a href="#cb13-92" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n\n</span><span class="st">&quot;</span> <span class="op">+</span> <span class="st">&quot;=&quot;</span><span class="op">*</span><span class="dv">20</span> <span class="op">+</span> <span class="st">&quot; GENERATED DIET PLAN V2 &quot;</span> <span class="op">+</span> <span class="st">&quot;=&quot;</span><span class="op">*</span><span class="dv">20</span>)</span>
+<span id="cb13-93"><a href="#cb13-93" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(json.dumps(final_diet_plan_v2, indent<span class="op">=</span><span class="dv">2</span>))</span>
+<span id="cb13-94"><a href="#cb13-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-95"><a href="#cb13-95" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Review and Compare Totals for V2 ---</span></span>
+<span id="cb13-96"><a href="#cb13-96" aria-hidden="true" tabindex="-1"></a>total_calories_v2 <span class="op">=</span> <span class="bu">sum</span>(final_diet_plan_v2[m][<span class="st">&#39;totals&#39;</span>][<span class="st">&#39;Calories&#39;</span>] <span class="cf">for</span> m <span class="kw">in</span> final_diet_plan_v2)</span>
+<span id="cb13-97"><a href="#cb13-97" aria-hidden="true" tabindex="-1"></a>total_protein_v2 <span class="op">=</span> <span class="bu">sum</span>(final_diet_plan_v2[m][<span class="st">&#39;totals&#39;</span>][<span class="st">&#39;Protein&#39;</span>] <span class="cf">for</span> m <span class="kw">in</span> final_diet_plan_v2)</span>
+<span id="cb13-98"><a href="#cb13-98" aria-hidden="true" tabindex="-1"></a>total_carbs_v2 <span class="op">=</span> <span class="bu">sum</span>(final_diet_plan_v2[m][<span class="st">&#39;totals&#39;</span>][<span class="st">&#39;Carbs&#39;</span>] <span class="cf">for</span> m <span class="kw">in</span> final_diet_plan_v2)</span>
+<span id="cb13-99"><a href="#cb13-99" aria-hidden="true" tabindex="-1"></a>total_fat_v2 <span class="op">=</span> <span class="bu">sum</span>(final_diet_plan_v2[m][<span class="st">&#39;totals&#39;</span>][<span class="st">&#39;Fat&#39;</span>] <span class="cf">for</span> m <span class="kw">in</span> final_diet_plan_v2)</span>
+<span id="cb13-100"><a href="#cb13-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-101"><a href="#cb13-101" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n\n</span><span class="st">&quot;</span> <span class="op">+</span> <span class="st">&quot;=&quot;</span><span class="op">*</span><span class="dv">20</span> <span class="op">+</span> <span class="st">&quot; V2 PLAN TOTALS vs. TARGETS &quot;</span> <span class="op">+</span> <span class="st">&quot;=&quot;</span><span class="op">*</span><span class="dv">20</span>)</span>
+<span id="cb13-102"><a href="#cb13-102" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Calories: </span><span class="sc">{</span>total_calories_v2<span class="sc">}</span><span class="ss"> / </span><span class="sc">{</span>user_macros[<span class="st">&#39;calories&#39;</span>]<span class="sc">}</span><span class="ss"> kcal&quot;</span>)</span>
+<span id="cb13-103"><a href="#cb13-103" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Protein:  </span><span class="sc">{</span>total_protein_v2<span class="sc">}</span><span class="ss">g / </span><span class="sc">{</span>user_macros[<span class="st">&#39;protein&#39;</span>]<span class="sc">}</span><span class="ss">g&quot;</span>)</span>
+<span id="cb13-104"><a href="#cb13-104" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Carbs:    </span><span class="sc">{</span>total_carbs_v2<span class="sc">}</span><span class="ss">g / </span><span class="sc">{</span>user_macros[<span class="st">&#39;carbs&#39;</span>]<span class="sc">}</span><span class="ss">g&quot;</span>)</span>
+<span id="cb13-105"><a href="#cb13-105" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Fat:      </span><span class="sc">{</span>total_fat_v2<span class="sc">}</span><span class="ss">g / </span><span class="sc">{</span>user_macros[<span class="st">&#39;fat&#39;</span>]<span class="sc">}</span><span class="ss">g&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>--- Testing Improved Generator (v2) ---
+
+
+==================== GENERATED DIET PLAN V2 ====================
+{
+  &quot;Breakfast&quot;: {
+    &quot;items&quot;: [
+      {
+        &quot;Food&quot;: &quot;ORIGINAL FULLY COOKED PORK SAUSAGE CRUMBLES, ORIGINAL&quot;,
+        &quot;Portion (g)&quot;: 171,
+        &quot;Calories&quot;: 734,
+        &quot;Protein&quot;: 21,
+        &quot;Fat&quot;: 67,
+        &quot;Carbs&quot;: 3
+      }
+    ],
+    &quot;totals&quot;: {
+      &quot;Calories&quot;: 734,
+      &quot;Protein&quot;: 21,
+      &quot;Fat&quot;: 67,
+      &quot;Carbs&quot;: 3
+    }
+  },
+  &quot;Lunch&quot;: {
+    &quot;items&quot;: [
+      {
+        &quot;Food&quot;: &quot;ORGANIC GRASS FED BEEF&quot;,
+        &quot;Portion (g)&quot;: 191,
+        &quot;Calories&quot;: 392,
+        &quot;Protein&quot;: 34,
+        &quot;Fat&quot;: 27,
+        &quot;Carbs&quot;: 3
+      },
+      {
+        &quot;Food&quot;: &quot;LEMON HERB SHRIMP WITH BARLEY, SPINACH, SWEET POTATO &amp; CHICKPEAS&quot;,
+        &quot;Portion (g)&quot;: 241,
+        &quot;Calories&quot;: 214,
+        &quot;Protein&quot;: 9,
+        &quot;Fat&quot;: 4,
+        &quot;Carbs&quot;: 36
+      }
+    ],
+    &quot;totals&quot;: {
+      &quot;Calories&quot;: 606,
+      &quot;Protein&quot;: 43,
+      &quot;Fat&quot;: 31,
+      &quot;Carbs&quot;: 39
+    }
+  },
+  &quot;Dinner&quot;: {
+    &quot;items&quot;: [
+      {
+        &quot;Food&quot;: &quot;NUTMEAT TACOS MEAL KIT&quot;,
+        &quot;Portion (g)&quot;: 282,
+        &quot;Calories&quot;: 1153,
+        &quot;Protein&quot;: 30,
+        &quot;Fat&quot;: 90,
+        &quot;Carbs&quot;: 64
+      }
+    ],
+    &quot;totals&quot;: {
+      &quot;Calories&quot;: 1153,
+      &quot;Protein&quot;: 30,
+      &quot;Fat&quot;: 90,
+      &quot;Carbs&quot;: 64
+    }
+  }
+}
+
+
+==================== V2 PLAN TOTALS vs. TARGETS ====================
+Calories: 2493 / 1517 kcal
+Protein:  94g / 114g
+Carbs:    106g / 152g
+Fat:      188g / 51g
+</code></pre>
+</div>
+</div>
+<div id="93d1a01e" class="cell markdown">
+<h3 id="step-7-final-refinement-v3---balanced-algorithm">Step 7: Final
+Refinement (V3 - Balanced Algorithm)</h3>
+<p><strong>Analysis:</strong> Our <code>v2</code> algorithm successfully
+prioritized protein but drastically overshot the calorie and fat
+targets. This happened because our high-protein food choices were also
+very high in fat.</p>
+<p><strong>Improvement (V3):</strong> We will create a more balanced
+algorithm that searches for <strong>lean protein sources</strong>.</p>
+<ol>
+<li>We will calculate a <strong>"leanness score"</strong> for each food
+(Protein grams / Calorie count). A higher score means more protein per
+calorie.</li>
+<li>When selecting the primary protein source for a meal, we will filter
+for foods with a <strong>good leanness score</strong>.</li>
+<li>We will also add a hard cap to the portion size calculation to
+prevent a single item from exceeding the meal's entire calorie budget.
+This acts as a crucial safety check.</li>
+</ol>
+</div>
+<div id="60dcd77b" class="cell code" data-execution_count="91">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># @title Step 7: The Final Generator Function (v3 - Balanced)</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="co"># First, let&#39;s create a &#39;Leanness&#39; score in our dataframe</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Leanness = Protein / Calories. We&#39;ll ignore division-by-zero warnings for now.</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> np.errstate(divide<span class="op">=</span><span class="st">&#39;ignore&#39;</span>, invalid<span class="op">=</span><span class="st">&#39;ignore&#39;</span>):</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>    df_food_cleaned[<span class="st">&#39;Leanness&#39;</span>] <span class="op">=</span> (df_food_cleaned[<span class="st">&#39;Protein&#39;</span>] <span class="op">*</span> <span class="dv">4</span>) <span class="op">/</span> df_food_cleaned[<span class="st">&#39;Calories&#39;</span>]</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace infinite values with 0 and fill NaNs</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>df_food_cleaned.replace([np.inf, <span class="op">-</span>np.inf], <span class="dv">0</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>df_food_cleaned[<span class="st">&#39;Leanness&#39;</span>].fillna(<span class="dv">0</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> generate_diet_plan_v3(df, daily_targets):</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a><span class="co">    Generates a balanced meal plan by prioritizing LEAN protein sources.</span></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>    meal_plan <span class="op">=</span> {</span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Breakfast&#39;</span>: {<span class="st">&#39;items&#39;</span>: [], <span class="st">&#39;totals&#39;</span>: {<span class="st">&#39;Calories&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Protein&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Fat&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Carbs&#39;</span>: <span class="dv">0</span>}},</span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Lunch&#39;</span>: {<span class="st">&#39;items&#39;</span>: [], <span class="st">&#39;totals&#39;</span>: {<span class="st">&#39;Calories&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Protein&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Fat&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Carbs&#39;</span>: <span class="dv">0</span>}},</span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;Dinner&#39;</span>: {<span class="st">&#39;items&#39;</span>: [], <span class="st">&#39;totals&#39;</span>: {<span class="st">&#39;Calories&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Protein&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Fat&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;Carbs&#39;</span>: <span class="dv">0</span>}},</span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>    meal_distribution <span class="op">=</span> {<span class="st">&#39;Breakfast&#39;</span>: <span class="fl">0.25</span>, <span class="st">&#39;Lunch&#39;</span>: <span class="fl">0.40</span>, <span class="st">&#39;Dinner&#39;</span>: <span class="fl">0.35</span>}</span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> meal_name, percentage <span class="kw">in</span> meal_distribution.items():</span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>        meal_targets <span class="op">=</span> {k: v <span class="op">*</span> percentage <span class="cf">for</span> k, v <span class="kw">in</span> daily_targets.items()}</span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>        meal_df <span class="op">=</span> meal_plan[meal_name]</span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>        <span class="co"># --- LEAN PROTEIN FIRST ---</span></span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>        protein_needed <span class="op">=</span> meal_targets[<span class="st">&#39;protein&#39;</span>]</span>
+<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Find LEAN, high-protein foods. Leanness &gt; 0.3 means at least 30% of calories from protein.</span></span>
+<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a>        lean_protein_foods <span class="op">=</span> df[(df[<span class="st">&#39;Protein&#39;</span>] <span class="op">&gt;</span> <span class="dv">10</span>) <span class="op">&amp;</span> (df[<span class="st">&#39;Leanness&#39;</span>] <span class="op">&gt;</span> <span class="fl">0.3</span>)]</span>
+<span id="cb15-31"><a href="#cb15-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-32"><a href="#cb15-32" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> lean_protein_foods.empty:</span>
+<span id="cb15-33"><a href="#cb15-33" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Add one lean protein source</span></span>
+<span id="cb15-34"><a href="#cb15-34" aria-hidden="true" tabindex="-1"></a>            food_sample <span class="op">=</span> lean_protein_foods.sample(<span class="dv">1</span>).iloc[<span class="dv">0</span>]</span>
+<span id="cb15-35"><a href="#cb15-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-36"><a href="#cb15-36" aria-hidden="true" tabindex="-1"></a>            <span class="co"># --- CRITICAL SAFETY CHECK ---</span></span>
+<span id="cb15-37"><a href="#cb15-37" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Calculate portion for protein, BUT cap it by the meal&#39;s calorie budget.</span></span>
+<span id="cb15-38"><a href="#cb15-38" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Portion for Protein:</span></span>
+<span id="cb15-39"><a href="#cb15-39" aria-hidden="true" tabindex="-1"></a>            target_protein_for_item <span class="op">=</span> protein_needed <span class="op">*</span> <span class="fl">0.8</span> <span class="co"># Target 80% of protein from this item</span></span>
+<span id="cb15-40"><a href="#cb15-40" aria-hidden="true" tabindex="-1"></a>            p_portion_g <span class="op">=</span> <span class="bu">round</span>((target_protein_for_item <span class="op">/</span> food_sample[<span class="st">&#39;Protein&#39;</span>]) <span class="op">*</span> <span class="dv">100</span>) <span class="cf">if</span> food_sample[<span class="st">&#39;Protein&#39;</span>] <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="dv">100</span></span>
+<span id="cb15-41"><a href="#cb15-41" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Portion for Calories:</span></span>
+<span id="cb15-42"><a href="#cb15-42" aria-hidden="true" tabindex="-1"></a>            c_portion_g <span class="op">=</span> <span class="bu">round</span>((meal_targets[<span class="st">&#39;calories&#39;</span>] <span class="op">/</span> food_sample[<span class="st">&#39;Calories&#39;</span>]) <span class="op">*</span> <span class="dv">100</span>) <span class="cf">if</span> food_sample[<span class="st">&#39;Calories&#39;</span>] <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="dv">100</span></span>
+<span id="cb15-43"><a href="#cb15-43" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Choose the SMALLER of the two portions to avoid blowing a budget.</span></span>
+<span id="cb15-44"><a href="#cb15-44" aria-hidden="true" tabindex="-1"></a>            portion_g <span class="op">=</span> <span class="bu">min</span>(p_portion_g, c_portion_g)</span>
+<span id="cb15-45"><a href="#cb15-45" aria-hidden="true" tabindex="-1"></a>            portion_g <span class="op">=</span> <span class="bu">min</span>(<span class="bu">max</span>(portion_g, <span class="dv">50</span>), <span class="dv">300</span>) <span class="co"># Clamp to realistic serving</span></span>
+<span id="cb15-46"><a href="#cb15-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-47"><a href="#cb15-47" aria-hidden="true" tabindex="-1"></a>            <span class="co"># Add the item</span></span>
+<span id="cb15-48"><a href="#cb15-48" aria-hidden="true" tabindex="-1"></a>            portion_multiplier <span class="op">=</span> portion_g <span class="op">/</span> <span class="fl">100.0</span></span>
+<span id="cb15-49"><a href="#cb15-49" aria-hidden="true" tabindex="-1"></a>            item <span class="op">=</span> {</span>
+<span id="cb15-50"><a href="#cb15-50" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Food&#39;</span>: food_sample[<span class="st">&#39;Food&#39;</span>], <span class="st">&#39;Portion (g)&#39;</span>: portion_g,</span>
+<span id="cb15-51"><a href="#cb15-51" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Calories&#39;</span>: <span class="bu">round</span>(food_sample[<span class="st">&#39;Calories&#39;</span>] <span class="op">*</span> portion_multiplier),</span>
+<span id="cb15-52"><a href="#cb15-52" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Protein&#39;</span>: <span class="bu">round</span>(food_sample[<span class="st">&#39;Protein&#39;</span>] <span class="op">*</span> portion_multiplier),</span>
+<span id="cb15-53"><a href="#cb15-53" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Fat&#39;</span>: <span class="bu">round</span>(food_sample[<span class="st">&#39;Fat&#39;</span>] <span class="op">*</span> portion_multiplier),</span>
+<span id="cb15-54"><a href="#cb15-54" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Carbs&#39;</span>: <span class="bu">round</span>(food_sample[<span class="st">&#39;Carbs&#39;</span>] <span class="op">*</span> portion_multiplier)</span>
+<span id="cb15-55"><a href="#cb15-55" aria-hidden="true" tabindex="-1"></a>            }</span>
+<span id="cb15-56"><a href="#cb15-56" aria-hidden="true" tabindex="-1"></a>            meal_df[<span class="st">&#39;items&#39;</span>].append(item)</span>
+<span id="cb15-57"><a href="#cb15-57" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> key <span class="kw">in</span> [<span class="st">&#39;Calories&#39;</span>, <span class="st">&#39;Protein&#39;</span>, <span class="st">&#39;Fat&#39;</span>, <span class="st">&#39;Carbs&#39;</span>]: meal_df[<span class="st">&#39;totals&#39;</span>][key] <span class="op">+=</span> item[key]</span>
+<span id="cb15-58"><a href="#cb15-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-59"><a href="#cb15-59" aria-hidden="true" tabindex="-1"></a>        <span class="co"># --- FILLER FOODS (UNCHANGED) ---</span></span>
+<span id="cb15-60"><a href="#cb15-60" aria-hidden="true" tabindex="-1"></a>        calories_needed <span class="op">=</span> meal_targets[<span class="st">&#39;calories&#39;</span>] <span class="op">-</span> meal_df[<span class="st">&#39;totals&#39;</span>][<span class="st">&#39;Calories&#39;</span>]</span>
+<span id="cb15-61"><a href="#cb15-61" aria-hidden="true" tabindex="-1"></a>        <span class="cf">while</span> calories_needed <span class="op">&gt;</span> <span class="dv">100</span> <span class="kw">and</span> <span class="bu">len</span>(meal_df[<span class="st">&#39;items&#39;</span>]) <span class="op">&lt;</span> <span class="dv">3</span>:</span>
+<span id="cb15-62"><a href="#cb15-62" aria-hidden="true" tabindex="-1"></a>            filler_foods <span class="op">=</span> df[(df[<span class="st">&#39;Carbs&#39;</span>] <span class="op">&gt;</span> <span class="dv">15</span>) <span class="op">&amp;</span> (df[<span class="st">&#39;Leanness&#39;</span>] <span class="op">&lt;</span> <span class="fl">0.2</span>)] <span class="co"># Find carb sources that aren&#39;t also high-protein</span></span>
+<span id="cb15-63"><a href="#cb15-63" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> filler_foods.empty: <span class="cf">break</span></span>
+<span id="cb15-64"><a href="#cb15-64" aria-hidden="true" tabindex="-1"></a>            food_sample <span class="op">=</span> filler_foods.sample(<span class="dv">1</span>).iloc[<span class="dv">0</span>]</span>
+<span id="cb15-65"><a href="#cb15-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-66"><a href="#cb15-66" aria-hidden="true" tabindex="-1"></a>            portion_g <span class="op">=</span> <span class="bu">round</span>((calories_needed <span class="op">/</span> food_sample[<span class="st">&#39;Calories&#39;</span>]) <span class="op">*</span> <span class="dv">100</span>) <span class="cf">if</span> food_sample[<span class="st">&#39;Calories&#39;</span>] <span class="op">&gt;</span> <span class="dv">0</span> <span class="cf">else</span> <span class="dv">0</span></span>
+<span id="cb15-67"><a href="#cb15-67" aria-hidden="true" tabindex="-1"></a>            portion_g <span class="op">=</span> <span class="bu">min</span>(<span class="bu">max</span>(portion_g, <span class="dv">50</span>), <span class="dv">250</span>)</span>
+<span id="cb15-68"><a href="#cb15-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-69"><a href="#cb15-69" aria-hidden="true" tabindex="-1"></a>            portion_multiplier <span class="op">=</span> portion_g <span class="op">/</span> <span class="fl">100.0</span></span>
+<span id="cb15-70"><a href="#cb15-70" aria-hidden="true" tabindex="-1"></a>            item <span class="op">=</span> {</span>
+<span id="cb15-71"><a href="#cb15-71" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Food&#39;</span>: food_sample[<span class="st">&#39;Food&#39;</span>], <span class="st">&#39;Portion (g)&#39;</span>: portion_g,</span>
+<span id="cb15-72"><a href="#cb15-72" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Calories&#39;</span>: <span class="bu">round</span>(food_sample[<span class="st">&#39;Calories&#39;</span>] <span class="op">*</span> portion_multiplier),</span>
+<span id="cb15-73"><a href="#cb15-73" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Protein&#39;</span>: <span class="bu">round</span>(food_sample[<span class="st">&#39;Protein&#39;</span>] <span class="op">*</span> portion_multiplier),</span>
+<span id="cb15-74"><a href="#cb15-74" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Fat&#39;</span>: <span class="bu">round</span>(food_sample[<span class="st">&#39;Fat&#39;</span>] <span class="op">*</span> portion_multiplier),</span>
+<span id="cb15-75"><a href="#cb15-75" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;Carbs&#39;</span>: <span class="bu">round</span>(food_sample[<span class="st">&#39;Carbs&#39;</span>] <span class="op">*</span> portion_multiplier)</span>
+<span id="cb15-76"><a href="#cb15-76" aria-hidden="true" tabindex="-1"></a>            }</span>
+<span id="cb15-77"><a href="#cb15-77" aria-hidden="true" tabindex="-1"></a>            meal_df[<span class="st">&#39;items&#39;</span>].append(item)</span>
+<span id="cb15-78"><a href="#cb15-78" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> key <span class="kw">in</span> [<span class="st">&#39;Calories&#39;</span>, <span class="st">&#39;Protein&#39;</span>, <span class="st">&#39;Fat&#39;</span>, <span class="st">&#39;Carbs&#39;</span>]: meal_df[<span class="st">&#39;totals&#39;</span>][key] <span class="op">+=</span> item[key]</span>
+<span id="cb15-79"><a href="#cb15-79" aria-hidden="true" tabindex="-1"></a>            calories_needed <span class="op">=</span> meal_targets[<span class="st">&#39;calories&#39;</span>] <span class="op">-</span> meal_df[<span class="st">&#39;totals&#39;</span>][<span class="st">&#39;Calories&#39;</span>]</span>
+<span id="cb15-80"><a href="#cb15-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-81"><a href="#cb15-81" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> meal_plan</span>
+<span id="cb15-82"><a href="#cb15-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-83"><a href="#cb15-83" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Let&#39;s test the v3 generator ---</span></span>
+<span id="cb15-84"><a href="#cb15-84" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;--- Testing Final Balanced Generator (v3) ---&quot;</span>)</span>
+<span id="cb15-85"><a href="#cb15-85" aria-hidden="true" tabindex="-1"></a>final_diet_plan_v3 <span class="op">=</span> generate_diet_plan_v3(df_food_cleaned, user_macros)</span>
+<span id="cb15-86"><a href="#cb15-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-87"><a href="#cb15-87" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n\n</span><span class="st">&quot;</span> <span class="op">+</span> <span class="st">&quot;=&quot;</span><span class="op">*</span><span class="dv">20</span> <span class="op">+</span> <span class="st">&quot; GENERATED DIET PLAN V3 &quot;</span> <span class="op">+</span> <span class="st">&quot;=&quot;</span><span class="op">*</span><span class="dv">20</span>)</span>
+<span id="cb15-88"><a href="#cb15-88" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(json.dumps(final_diet_plan_v3, indent<span class="op">=</span><span class="dv">2</span>))</span>
+<span id="cb15-89"><a href="#cb15-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-90"><a href="#cb15-90" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Review and Compare Totals for V3 ---</span></span>
+<span id="cb15-91"><a href="#cb15-91" aria-hidden="true" tabindex="-1"></a>total_calories_v3 <span class="op">=</span> <span class="bu">sum</span>(final_diet_plan_v3[m][<span class="st">&#39;totals&#39;</span>][<span class="st">&#39;Calories&#39;</span>] <span class="cf">for</span> m <span class="kw">in</span> final_diet_plan_v3)</span>
+<span id="cb15-92"><a href="#cb15-92" aria-hidden="true" tabindex="-1"></a>total_protein_v3 <span class="op">=</span> <span class="bu">sum</span>(final_diet_plan_v3[m][<span class="st">&#39;totals&#39;</span>][<span class="st">&#39;Protein&#39;</span>] <span class="cf">for</span> m <span class="kw">in</span> final_diet_plan_v3)</span>
+<span id="cb15-93"><a href="#cb15-93" aria-hidden="true" tabindex="-1"></a>total_carbs_v3 <span class="op">=</span> <span class="bu">sum</span>(final_diet_plan_v3[m][<span class="st">&#39;totals&#39;</span>][<span class="st">&#39;Carbs&#39;</span>] <span class="cf">for</span> m <span class="kw">in</span> final_diet_plan_v3)</span>
+<span id="cb15-94"><a href="#cb15-94" aria-hidden="true" tabindex="-1"></a>total_fat_v3 <span class="op">=</span> <span class="bu">sum</span>(final_diet_plan_v3[m][<span class="st">&#39;totals&#39;</span>][<span class="st">&#39;Fat&#39;</span>] <span class="cf">for</span> m <span class="kw">in</span> final_diet_plan_v3)</span>
+<span id="cb15-95"><a href="#cb15-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-96"><a href="#cb15-96" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n\n</span><span class="st">&quot;</span> <span class="op">+</span> <span class="st">&quot;=&quot;</span><span class="op">*</span><span class="dv">20</span> <span class="op">+</span> <span class="st">&quot; V3 PLAN TOTALS vs. TARGETS &quot;</span> <span class="op">+</span> <span class="st">&quot;=&quot;</span><span class="op">*</span><span class="dv">20</span>)</span>
+<span id="cb15-97"><a href="#cb15-97" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Calories: </span><span class="sc">{</span>total_calories_v3<span class="sc">}</span><span class="ss"> / </span><span class="sc">{</span>user_macros[<span class="st">&#39;calories&#39;</span>]<span class="sc">}</span><span class="ss"> kcal&quot;</span>)</span>
+<span id="cb15-98"><a href="#cb15-98" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Protein:  </span><span class="sc">{</span>total_protein_v3<span class="sc">}</span><span class="ss">g / </span><span class="sc">{</span>user_macros[<span class="st">&#39;protein&#39;</span>]<span class="sc">}</span><span class="ss">g&quot;</span>)</span>
+<span id="cb15-99"><a href="#cb15-99" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Carbs:    </span><span class="sc">{</span>total_carbs_v3<span class="sc">}</span><span class="ss">g / </span><span class="sc">{</span>user_macros[<span class="st">&#39;carbs&#39;</span>]<span class="sc">}</span><span class="ss">g&quot;</span>)</span>
+<span id="cb15-100"><a href="#cb15-100" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Fat:      </span><span class="sc">{</span>total_fat_v3<span class="sc">}</span><span class="ss">g / </span><span class="sc">{</span>user_macros[<span class="st">&#39;fat&#39;</span>]<span class="sc">}</span><span class="ss">g&quot;</span>)</span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>C:\Users\MUHAMMAD ZAIN\AppData\Local\Temp\ipykernel_14996\2223629216.py:9: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing &#39;df[col].method(value, inplace=True)&#39;, try using &#39;df.method({col: value}, inplace=True)&#39; or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  df_food_cleaned[&#39;Leanness&#39;].fillna(0, inplace=True)
+</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>--- Testing Final Balanced Generator (v3) ---
+
+
+==================== GENERATED DIET PLAN V3 ====================
+{
+  &quot;Breakfast&quot;: {
+    &quot;items&quot;: [
+      {
+        &quot;Food&quot;: &quot;26-28 OZ H&amp;G FLOUNDER&quot;,
+        &quot;Portion (g)&quot;: 182,
+        &quot;Calories&quot;: 129,
+        &quot;Protein&quot;: 23,
+        &quot;Fat&quot;: 3,
+        &quot;Carbs&quot;: 0
+      },
+      {
+        &quot;Food&quot;: &quot;JELLIED CRANBERRY SAUCE, JELLIED CRANBERRY&quot;,
+        &quot;Portion (g)&quot;: 159,
+        &quot;Calories&quot;: 250,
+        &quot;Protein&quot;: 0,
+        &quot;Fat&quot;: 0,
+        &quot;Carbs&quot;: 64
+      }
+    ],
+    &quot;totals&quot;: {
+      &quot;Calories&quot;: 379,
+      &quot;Protein&quot;: 23,
+      &quot;Fat&quot;: 3,
+      &quot;Carbs&quot;: 64
+    }
+  },
+  &quot;Lunch&quot;: {
+    &quot;items&quot;: [
+      {
+        &quot;Food&quot;: &quot;RICOTTA PART SKIM CHEESE, RICOTTA&quot;,
+        &quot;Portion (g)&quot;: 231,
+        &quot;Calories&quot;: 365,
+        &quot;Protein&quot;: 36,
+        &quot;Fat&quot;: 20,
+        &quot;Carbs&quot;: 12
+      },
+      {
+        &quot;Food&quot;: &quot;CHIPOTLE HUMMUS&quot;,
+        &quot;Portion (g)&quot;: 113,
+        &quot;Calories&quot;: 242,
+        &quot;Protein&quot;: 8,
+        &quot;Fat&quot;: 14,
+        &quot;Carbs&quot;: 32
+      }
+    ],
+    &quot;totals&quot;: {
+      &quot;Calories&quot;: 607,
+      &quot;Protein&quot;: 44,
+      &quot;Fat&quot;: 34,
+      &quot;Carbs&quot;: 44
+    }
+  },
+  &quot;Dinner&quot;: {
+    &quot;items&quot;: [
+      {
+        &quot;Food&quot;: &quot;HATCH GREEN CHILE BEEF STRIPS, HATCH GREEN CHILE&quot;,
+        &quot;Portion (g)&quot;: 81,
+        &quot;Calories&quot;: 232,
+        &quot;Protein&quot;: 32,
+        &quot;Fat&quot;: 6,
+        &quot;Carbs&quot;: 9
+      },
+      {
+        &quot;Food&quot;: &quot;PEANUT GHOUL&#39;S MIX CHOCOLATE CANDIES, PEANUT&quot;,
+        &quot;Portion (g)&quot;: 60,
+        &quot;Calories&quot;: 300,
+        &quot;Protein&quot;: 6,
+        &quot;Fat&quot;: 15,
+        &quot;Carbs&quot;: 36
+      }
+    ],
+    &quot;totals&quot;: {
+      &quot;Calories&quot;: 532,
+      &quot;Protein&quot;: 38,
+      &quot;Fat&quot;: 21,
+      &quot;Carbs&quot;: 45
+    }
+  }
+}
+
+
+==================== V3 PLAN TOTALS vs. TARGETS ====================
+Calories: 1518 / 1517 kcal
+Protein:  105g / 114g
+Carbs:    153g / 152g
+Fat:      58g / 51g
+</code></pre>
+</div>
+</div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"0357a45f23a943f08700f7f9af191ee6","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

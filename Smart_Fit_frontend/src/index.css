@@ -1,0 +1,120 @@
+/* --- STEP 1: IMPORT TAILWIND AND GOOGLE FONTS --- */
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* --- STEP 2: REMOVE THE OLD FONT IMPORT --- */
+/* We no longer need this line as we are using Google Fonts directly */
+/* @import "./styles/fonts.css"; */
+
+
+/* --- The rest of your CSS remains the same --- */
+
+:root {
+  /* You can keep 'Fonetika' if you have another definition for it, otherwise it will fall back to Montserrat */
+  --font-fonetika: "Fonetika", "Montserrat", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-montserrat: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-fonetika);
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+@theme {
+  --font-fonetika: var(--font-fonetika), sans-serif;
+  --font-montserrat: var(--font-montserrat), sans-serif;
+
+  /* colors */
+  --color-ocean-glow: #5271ff;
+  --color-darkCharcoal: #0a0a0a;
+  --color-darkRed: #d32f2f;
+  --color-green: #2fa33a;
+  --color-golden-rod: #dba200;
+  --color-vermilion: #db3700;
+  --color-orange-red: #f6643f;
+  --color-pale-azure: #f2f4f8;
+  --color-black: #000;
+  --color-semi-transparent-black: rgba(0, 0, 0, 0.5);
+  --color-white: #fff;
+  --color-snow-white: #fdfbfb;
+  --color-ash-gray: #eaeaea;
+  --color-light-gray: #d1d5dc;
+  --color-soft-gray: #e8e8e8;
+  --color-gray: #4a5565;
+  --color-slate-gray: #475467;
+  --color-cloud-gray: #e7e7e7;
+  --color-dove-gray: #e9e9e9;
+  --color-whisper-gray: #f5f5f5;
+  --color-shadow-mist: #0000001a;
+  --color-froasted-glass: rgba(255, 255, 255, 0.12);
+  --color-faint-white: rgba(255, 255, 255, 0.16);
+  --color-light-smoke: rgba(0, 0, 0, 0.1);
+  --color-pale-silver: rgba(219, 219, 219, 0.1);
+  --color-accent: hsl(0 0% 96.1%);
+  --color-accent-foreground: hsla(0, 0%, 0%, 1);
+
+  /* breakpoints */
+  --breakpoint-xs: 26.25rem;
+
+  /* box shadows */
+  --shadow-light: 0px 24px 32px 0px rgba(0, 0, 0, 0.04);
+}
+
+/* Add to your global CSS file or index.css */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
