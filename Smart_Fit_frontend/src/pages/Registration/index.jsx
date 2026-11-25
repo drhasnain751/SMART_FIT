@@ -7,6 +7,7 @@ import InputField from "../../components/InputField";
 import { registrationValidationSchema } from "./components/validation-schema";
 import { register as apiRegister } from "../../lib/services/authService";
 import { Typography } from "../../components/Typography";
+import { toast } from "sonner";
 
 const Registration = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -23,7 +24,7 @@ const Registration = () => {
       setApiError(null); // Clear previous errors
       try {
         await apiRegister(values.email, values.password);
-        alert("Registration successful! Please proceed to log in.");
+        toast.success("Registration successful! Please proceed to log in.");
         navigate("/login");
       } catch (error) {
         // This new logic handles both simple string errors and complex validation error objects.

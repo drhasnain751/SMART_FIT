@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 // Vite exposes environment variables on the `import.meta.env` object.
-const baseURL = import.meta.env.VITE_API_BASE_URL;
+const baseURL = import.meta.env.VITE_API_BASE_URL || '/api/v1';
 
 console.log(`API is connecting to: ${baseURL}`); // A helpful log to see which URL is being used
 

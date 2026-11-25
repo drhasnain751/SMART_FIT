@@ -1,0 +1,21 @@
+{
+  "name": "smartfit",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": [
+    "Smart_Fit_frontend"
+  ],
+  "scripts": {
+    "dev": "node server.js",
+    "build": "node scripts/build.mjs",
+    "lint": "node ./Smart_Fit_frontend/node_modules/eslint/bin/eslint.js Smart_Fit_frontend/src --config Smart_Fit_frontend/eslint.config.js",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
